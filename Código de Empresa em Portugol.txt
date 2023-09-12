@@ -1,0 +1,52 @@
+programa {
+  funcao inicio() {
+    cadeia nome,transporte
+    real registro,salario,desconto,salario_final
+   
+
+    escreva("Digite Seu Nome Completo: ")
+    leia(nome)
+    escreva("Digite Seu Registro de Colaborador: ")
+    leia(registro)
+    escreva("Digite Seu Salário: ")
+    leia(salario)
+    escreva("Digite Seu Meio de Transporte: ")
+    leia(transporte)
+
+    escreva("\nSeu Nome é: ", nome)
+    escreva("\nSeu Número de Registro é: ", registro)
+   
+    
+    desconto = salario * 6 /100
+    salario_final = salario - desconto
+    
+    se(transporte == "carro" ou transporte == "moto" ){
+
+      escreva("\nSeu Salário Mensal é de Aproximadamente: ", salario)
+      
+    }
+
+    senao{
+
+      escreva("\nSeu Salário Com Desconto será de Aproximadamente: ", salario_final)
+    
+    }
+    
+    
+    
+    se (transporte == "carro" ou transporte == "moto" ) {
+
+    escreva("\nSeu Benefício é de: Estacionamento")
+    }
+   
+   senao{
+
+    escreva("\nSeu Benefício é de: VT")
+   }
+    
+    
+    
+   
+   
+  }
+}
