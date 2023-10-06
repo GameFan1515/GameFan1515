@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e Eu sla</title>
+
+<style>
+div#area {
+
+    font: 20pt Arial;
+    background: green;
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div id="area">Clique Aqui </div>
+
+
+
+    <script>
+
+      
+        
+
+
+        var a =  document.getElementById("area")
+
+        a.addEventListener("click", mouseclick)
+        a.addEventListener("mouseenter", mouseenter)
+        a.addEventListener("mouseleave", mouseleave)
+
+        function mouseenter(){
+
+        a.innerText = "Entrou"
+        a.style.background = "red"
+       
+        }
+
+        function mouseclick(){
+
+        
+        a.innerText = "FODA-SE"
+        a.style.background = "cyan"
+       
+        }
+
+        function mouseleave (){
+
+        a.innerText = "Saiu"
+        a.style.background = "green"
+
+        }
+
+    </script>
+    
+</body>
+</html>

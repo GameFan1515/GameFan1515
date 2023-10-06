@@ -1,0 +1,19 @@
+* {
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20pt;
+color: white;
+
+}
+
+body {
+
+    background-image: linear-gradient(to right,#545461,#8C8CA1,#9797AD,#CECEED);
+
+    
+}
+
+input{
+
+    background-color: #000000;
+}

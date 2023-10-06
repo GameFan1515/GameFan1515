@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 2</title>
+</head>
+<body>
+    
+<input type="number" name="caixa1" id="caixa1"> -
+<input type="number" name="caixa2" id="caixa2">
+<input type="button" value="subtração" onclick="subtracao()">
+<div id="res"></div>
+
+
+<script>
+
+function subtracao(){
+
+var c1 = document.getElementById("caixa1")
+var c2 = document.getElementById("caixa2")
+var res = document.getElementById("res")
+
+var n1 = Number(c1.value)
+var n2 = Number(c2.value)
+
+var subtracao = n1 - n2
+
+res.innerHTML = `a subtração de ${n1} e ${n2} é: ${subtracao}`
+
+
+
+
+
+}
+
+
+
+</script>
+
+
+
+    
+</body>
+</html>

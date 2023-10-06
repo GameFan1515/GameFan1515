@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumento</title>
+    <link rel="stylesheet" href="CSS/Aumento.css">
+</head>
+<body>
+
+    <input type="number" name="salario" id="s">
+    <input type="button" value="Aumento" onclick="aumento()">
+    <div id="txt"></div>
+
+    <script>
+
+ function aumento(){
+
+ var s = document.getElementById("s")
+ var txt = document.getElementById("txt")
+
+ salário = Number(s.value)
+ taxa = salário * 15 / 100
+ aumento = salário + taxa
+
+ txt.innerText = `Com Aumento de 15% seu salário será: ${aumento.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}` 
+ 
+
+
+
+
+ }
+
+
+
+
+    </script>
+
+
+
+    
+</body>
+</html>

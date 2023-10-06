@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+<h1>Elegibilidade para Votação</h1>
+<input type="number" name="voto" id="vote">
+<input type="button" value="Click" onclick="voto()">
+<div id="votos"></div>
+
+
+<script>
+var v1 = document.getElementById("vote")
+var votos = document.getElementById("votos")
+
+function voto(){
+
+
+var idade = Number(v1.value)
+
+if( idade <= 15 && idade >= 1 ){
+
+votos.innerHTML ="Você Não Pode Votar"
+
+
+
+}
+
+else if (idade >= 16 && idade <= 17){
+
+
+votos.innerHTML = "O Voto é Opcional"
+
+
+}
+
+else if (idade >= 18) {
+
+
+votos.innerHTML = "O Voto é Obrigatório"
+
+
+}
+
+else {
+
+votos.innerHTML = "Idade Inválida"
+
+
+}
+
+
+
+}
+
+
+
+</script>
+
+
+
+
+
+    
+</body>
+</html>

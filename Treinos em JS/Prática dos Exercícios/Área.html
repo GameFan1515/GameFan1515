@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área</title>
+    <link rel="stylesheet" href="./CSS/Tinta.css">
+</head>
+<body>
+    <h1>Altura:</h1>
+    <input type="number" name="altura" id="a"> 
+    <h1>Largura:</h1>
+    <input type="number" name="base" id="b">
+    <input type="button" value="Área" onclick="area()">
+    <div id="txt"></div>
+
+
+
+    <script>
+
+    function area(){
+
+    var a = document.getElementById("a")
+    var b = document.getElementById("b")
+    var txt = document.getElementById("txt")
+
+    n1 = Number(a.value)
+    n2 = Number(b.value)
+
+    area = n1 * n2
+    tinta = area / 2
+
+    txt.innerText = `A Área da Parede é de ${area}m² e Precisará de ${tinta} Litros de Tinta.`
+
+
+
+
+    }
+
+
+
+
+    </script>
+    
+</body>
+</html>
